@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Do you wish to add a faculty?</h1>
+    <p>Add a new faculty to our database:</p>
+    <form method="post">
+        {{form.hidden_tag()}}
+        {{form.id.label}}{{form.id()}}
+        {{form.name.label}}{{form.name()}}
+        {{form.dept_id.label}}{{form.dept_id()}}
+        {{form.submit()}}
+
+    </form>
+</div>
+
+{% endblock %}

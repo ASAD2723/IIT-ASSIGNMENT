@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Do you wish to add a class?</h1>
+    <p>Add a new class to our database:</p>
+    <form method="post">
+        {{form.hidden_tag()}}
+        {{form.name.label}}{{form.name()}}
+        {{form.meet_at.label}}{{form.meet_at()}}
+        {{form.room.label}}{{form.room()}}
+        {{form.id.label}}{{form.id()}}
+        {{form.submit()}}
+
+    </form>
+</div>
+
+{% endblock %}

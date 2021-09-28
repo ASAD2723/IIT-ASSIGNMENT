@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Here is the list of all faculty:</h1>
+    <ul>
+        {% for fac in faculty %}
+            <li>{{fac.id}},{{fac.name}},{{fac.dept_id}},</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
